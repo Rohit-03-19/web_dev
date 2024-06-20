@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>learning frontend web development
+    </title>
+</head>
+<body><b>
+    We are first learning today what is html.<br/>
+    
+    Rohit Parida <hr>it creates a horizontal line and all the text written after it is passed to the new line.
+    <br/>
+    "br" tag helps in <br/> breaking a continous line and shift it to next line.<br/>
+    Now we are learning heading tags. they are basically of 6 types."h1""h2""h3""h4""h5""h6". 
+    <!-- here we have added inline style to our header tag and button -->
+    <!-- we don't recommend inline style because in this we have to add it again & again which is not possible for big codes -->
+    <h1 style="color:aqua;">This is H1 tag</h1>
+    <h2 style="color:navajowhite;">This is H2 tag</h2>
+    <h3 style="color:blue;">This is H3 tag</h3>
+    <h4 style="color:rgb(34, 34, 100);">This is H4 tag</h4>
+    <h5 style="color:green;">This is H5 tag</h5>
+    <h6 style="color:red;">This is H6 tag</h6><br/>
+    <button style="color:blue;background-color:red;">Help</button>
+    <b>"b" this tage is used to bold the written text in b/w this tag.</b><br/>
+    <strong>"strong" this also works as bold tag works, i.e. to bold the text but more specifically it also helps us to mark the words or some statements as more important than otthers.
+    </strong><br/>
+    <p>"p" this tag is used to write a new paragraph.</p><br/>
+    <i>"i" this tag is used to write the text in itallic style.</i><br/>
+    <u>"u" this tag is used to underline the text. </u><br/>
+    <mark>"mark" this tag is used to highlight the text by highlighting the txt with yellow colour </mark><br/>
+    <del>"del" this tag is used to delete the text in the page.</del> it cuts the text. <br/>
+    "Lorem$" this helps us to write basic text of any limit. to add limit we have to right how much words we want in place of $ sign. eg:"Lorem100" so 100 words will appear.<br/>
+    Now we will learn what is list tag and how it is used and something more about this.<br/>
+    <img src="./images/Screenshot 2024-01-06 211138.png" alt=""><br/>
+    List is basically divided into two parts (1)is ordered list and (2) is unordered list.<br/>
+    (1)ordered list this is basically represented by "ol".<br/>
+    The types of ordered list we can make is written below:- (NUmerical)<br/>
+            A(uppercase)<br/>
+            a(lowercase)<br/>
+            l(uppercase roman)<br/>
+            i(lower case roman)<br/>
+            these all are basically written as 'ol type="type_by_user"''<br/>
+        In numerical ordered list type the lists are as follow:- <ol type="1">
+            <li>1.HTML</li> 
+            <li>2.CSS</li> 
+            <li>3.JAVASCRIPT</li>
+        </ol>
+        <ol type="a">
+            <li>1.HTML</li> 
+            <li>2.CSS</li> 
+            <li>3.JAVASCRIPT</li>
+        </ol>
+        <ol type="A">
+            <li>1.HTML</li> 
+            <li>2.CSS</li> 
+            <li>3.JAVASCRIPT</li>
+        </ol>
+        <ol type="i">
+            <li>1.HTML</li> 
+            <li>2.CSS</li> 
+            <li>3.JAVASCRIPT</li>
+        </ol>
+        <ol type="I">
+            <li>1.HTML</li> 
+            <li>2.CSS</li> 
+            <li>3.JAVASCRIPT</li>
+        </ol>
+        above we have written all the types in which we can write the ordered list.<br/>
+        Going with an example of unordered list.<br>
+        represented as "ul" and the list tag is "li".<br>
+        <ul type="disc">
+            <li>HTML</li> 
+            <li>CSS</li> 
+            <li>JAVASCRIPT</li>
+        </ul>
+    unorderedc also contains some  type.<br/>
+    we can simply have none,disc,square,circle.<br/>
+    <ul type="none">
+        <li>HTML</li> 
+        <li>CSS</li> 
+        <li>JAVASCRIPT</li>
+    </ul>
+    <ul type="circle">
+        <li>HTML</li> 
+        <li>CSS</li> 
+        <li>JAVASCRIPT</li>
+    </ul>
+    <ul type="square">
+        <li>HTML</li> 
+        <li>CSS</li> 
+        <li>JAVASCRIPT</li>
+    </ul>
+    now we will create and learn how nested lists are used. it can be consist of both unordered and or orderedor only one type.<br/>
+    <ul>
+        <li>
+            frontend
+            <ul>
+                <li>
+                    HTML
+                    <ol>
+                        <li>
+                            HTML 5
+                        </li>
+                    </ol>
+                    CSS
+                    <ol>
+                        <li>
+                            CSS 5
+                        </li>
+                        <li>
+                            BOOTSTRAP
+                        </li>
+                    </ol>
+                    JAVASCRIPT
+                    <ol>
+                    
+                        <li>
+                            jquery
+                        </li>
+                    
+                    </ol>
+                </li>
+            </ul>
+        </li>
+        <li>
+            backend
+            <ol>
+                <li>
+                    Php
+                </li>
+                <li>
+                    Database
+                </li>
+                <li>
+                    ajax
+                </li>
+            </ol>
+        </li>
+    </ul>
+    the following image is added by the help of img tag img tag is represented as "img".<br/>
+    image tag contains attribute such as src,title,alt,height,width.<br>
+    <b>
+    src:- refers to the source<br/>
+    title:- refers to the text which comes when mouse hovers on image.<br/>
+    alt:- helps to add the text when the image is not displayed due to the browser problem or any other problem.<br/>
+    height & width:- both are in pixels helps to adjust the shape and size of image.<br/> 
+    </b>
+
+    <img src="./images/Screenshot (45).png" ttile="the image is used for testing" alt="sorry" height="600" width="800">
+    <br/>
+    An anchor tag is a tag used to put any link in our web page.<br/>
+    it has two attributes href,target.<br/>
+    href:- indicates the links destinantion.<br/>
+    target:- helps us to decide if the link should open on the same or on the next page.<br/>
+    _blank for next page, _parent for same page.
+    anchor tag is representedas "a"<br/>
+    <a href="https://classroom.google.com/c/NjQxMjU1Mjk5ODk0/m/NjUwMzA3MzMxMjgy/details" target="_blank">this link is for the maths work.
+    </a><br/>
+    centre tag helps to align text at the centre of the page "centre".<br/>
+    <center>
+        a+b
+    </center>
+    Tags for superscript, subscript.<br/>
+    for superscript "sup"<br/>
+    for subscript "sub"<br/>
+    <center>
+        a<sup>2</sup>+b<sup>2</sup><br/>
+        log<sub>2</sub>4+log<sub>2</sub>128
+    </center><br/>
+    to create a normal meter or percentage bar meter tag is used."meter"<br/>
+    <meter min="0" max="1000" value="900"></meter><br/>
+    now we will learn about table and its all subtags.<br/>
+    <img src="./images/Screenshot 2024-01-06 222605.png" height="300" width="500"><br/>
+    we will see now all the functions of table tag<br/>
+    it also contains attribute such as border,align,bgcolor,cellspacing,cellpadding,width,height.<br/>
+    <center>
+        <table border="1" align="center" bgcolor="yellow" cellpadding="5" cellspacing="5" height="200" width="190">
+            <thead>
+            <tr align="center" bgcolor="red">
+                <th bgcolor="green">Names</th>
+                <th>Date of birth</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr bgcolor="blue">
+                <td bgcolor="green">
+                    Rohit 
+                </td>
+                <td>19-03-2006</td>
+            </tr>
+            <tr bgcolor="blue">
+                <td>
+                    Vidhi
+                </td>
+                <td>
+                    25-04-2005
+                </td>
+            </tr bgcolor="blue">
+            <tr bgcolor="blue">
+                <td>
+                    Jaron
+                </td>
+                <td>
+                    20-01-2005
+                </td>
+            </tr>
+            <tr bgcolor="blue">
+                <td>
+                    Shubhra
+                </td>
+                <td>
+                    09-03-2005
+                </td>
+            </tr>
+            </tbody>
+        </table>
+    </center>
+    subtags of table has also some attributes see the picture given below.<br/>
+    <img src="./images/Screenshot 2024-01-06 225828.png" height="200" width="500"><br/>
+    table row tag also contains attributes such as bgcolor,align.<br/>
+    we have applied on the above table<br/>
+    table data and table head value also ha attributes. Both have same attribute like bgcolor,rowspan,colspan.<br/>
+    *colspan helps to collaspse written no. of cols into one.
+    <table border="1" align="center" bgcolor="yellow" cellpadding="5" cellspacing="5" height="200" width="190">
+        <thead>
+        <tr align="center" bgcolor="red">
+            <th bgcolor="green">Names</th>
+            <th>Date of birth</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr bgcolor="blue">
+            <td bgcolor="green">
+                Rohit 
+            </td>
+            <td>19-03-2006</td>
+        </tr>
+        <tr bgcolor="blue">
+            <td>
+                Vidhi
+            </td>
+            <td>
+                25-04-2005
+            </td>
+        </tr bgcolor="blue">
+        <tr bgcolor="blue">
+            <td rowspan="2">
+                Jaron
+            </td>
+            <td>
+                20-01-2005
+            </td>
+        </tr>
+        <tr bgcolor="blue">
+            <td colspan="2">
+                Shubhra
+            </td>
+            <td>
+                09-03-2005
+            </td>
+        </tr>
+        </tbody>
+    </table>
+    Now we will see what is a form how to create it how it is useful.<br/>
+    <img src="./images/Screenshot 2024-01-07 145927.png" height="200" widhth="400"/>
+    <img src="./images/Screenshot 2024-01-07 150432.png" height="200" width="300"/>
+    <h4>enquiry</h4>
+    <form>
+        <fieldset>
+            <!--value attribute in input tag helps to enter some default value which can be erased by the user.
+            where as placeholder attribute helps to show same value but gets vanishes when the user inputs anything in that space-->
+            Name:- <input type="text"/ value="Rohit Parida" placeholder="Candidates_name" name="name" readonly+ ><br/><br/>
+            Address:- <textarea name="address" placeholder="write your address" disabled="" ></textarea><br/>
+            <!--disabled attribute is used to disable the input box and no data is ubmitted when submit button is pressed.-->
+            Gender:-<input type="radio" value="m" name="gender" />Male
+            <!--  in input tag type radio helps us to put the choices into select round cirlce forms and putting the name same helps to select only one of the the circle -->
+            <input type="radio" value="f" name="gender"/> Female
+            <input type="radio" value="o" name="gender" checked=""/>Other<br/>
+            <br/>
+            <!--checked attribute is used to check the checkbox by default-->
+            Country:-
+            <select>
+                <option>please select a country</option>
+                <optgroup label="ASIA">
+                    <option value="India">India</option>
+                    <option value="Combodia">Combodia</option>
+                    <option value="China">China</option>
+                    <option value="Nepal">Nepal</option>
+                    <option value="Sri Lanka">Sri Lanka</option>
+                    <option value="Russia">Russia</option>
+                </optgroup> 
+                <optgroup label="EUROPE">
+                    <option value="Italy">Italy</option>
+                    <option value="Germany">Germany</option>
+                    <option value="France">France</option>
+                    <option value="Switzerland">Switzerland</option>
+                </optgroup>           
+                        
+            </select>
+            <br/>
+            <br/>
+            Hobbies:- 
+            <input type="checkbox" name="hobbies[]" checked=""/>Dancning
+            <input type="checkbox" name="hobbies[]" />singing
+            <input type="checkbox" name="hobbies[]" />videography
+            <input type="checkbox" name="hobbies[]" checked=""/>video games<br/>
+            <br/>
+            Image:- 
+            <input type="file" name="image" />
+            <br/>
+            <br/>
+            <input type="submit" value="submit" />
+            <input type="reset" value="reset" />
+        </fieldset>
+    </form><br/>
+    <br/>
+    <br/>
+    <img src="./images/Screenshot 2024-01-07 152633.png" hight="200" widht="400" />
+    <img src="./images/Screenshot 2024-01-07 155938.png" height="200" wdith="300">
+    <br/>
+    Creating a form using Html 5<br/>
+    <form>
+        <fieldset>
+            <legend>
+                HTML 5
+            </legend>
+            <input type="color" name="color" value="#FF0000"/>
+            <br/>
+            <br/>
+            Email:-
+            <input type="email" name="email" required="" placeholder="enter your email address"/> <!--required attribute is used to make the entry important i.e. user has to input some data in that entry -->
+            <br/><br/>
+            Password:- 
+            <input type="password" name="password" required="" placeholder="pasword required" maxlength="10"/>
+            <input type="submit" name="submit" />
+            <br/><br/>
+            <!-- here we have use the drop down menu which will help us to select the desired age by normally scrolling or selecting it by normally scrolling  -->
+            Age:- 
+            <select>   
+                <option>please select age</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+                <option value="11">11</option>
+                <option value="12">12</option>
+                <option value="13">13</option>
+                <option value="14">14</option>
+                <option value="15">15</option>
+                <option value="16">16</option>
+                <option value="17">17</option>
+                <option value="18">18</option>
+                <option value="19">19</option>
+                <option value="20">20</option>
+                <option value="21">21</option>
+                <option value="22">22</option>
+                <option value="23">23</option>
+                <option value="24">24</option>
+                <option value="25">25</option>
+                <option value="26">26</option>
+                <option value="27">27</option>
+                <option value="28">28</option>
+                <option value="29">29</option>
+                <option value="30">30</option>
+                <option value="31">31</option>
+                <option value="32">32</option>
+                <option value="33">33</option>
+            </select>
+            <br/>
+            <br/>
+            Yr:-
+            <input type="number" name="yr" value="2024" min="1" max="2100" />
+            <!--readonly attribute is used to display the text and cannot be edited by the user. can only be read not be overwritten by user. the data is set default also gets submitted when ubmitted.-->
+            <br/>
+            <br/>
+            <!--if i want to hide some useful data and don't want to show it to the user then we use the attribute and attribute value as type="hidden"-->
+            T&C:- 
+            <input type="hidden" name="t&c" />
+            <br/> <br/>
+            Date:-
+            <input type="date" name="date"/>
+             <br/><br/>
+             Date_Time:-
+             <input type="datetime-local" name="date_time" />
+             <br/><br/>
+             Time:- 
+             <input type="time" name="time"/>
+             <br/><br/>
+            Months:- 
+            <input type="month" name="month"/>
+            <br/><br/>
+            Week:- 
+            <input type="week" name=""/>
+            <br/><br/>
+            Range:- 
+            <input type="range" name="" min="0" max="1000" value="100"/>
+            <br/>
+            <br/>
+            <input type="submit" name="submit"/>
+            <br/><br/>
+        </fieldset>
+    </form>
+    <img src="./images/Screenshot 2024-01-07 170313.png" height="150" width="550" /><br/> <br/>
+    <h3>the most important tag in html is div tag</h3>
+    Now we will learn what is div tag and how it is used in html and how it sturctures our html page<br/><br/> 
+    <img src="./images/Screenshot 2024-01-07 180711.png" height="200" width="400"/>
+    <img src="./images/Screenshot 2024-01-07 180924.png" height="200" width="400"/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </b>
+</body>
+</html>
