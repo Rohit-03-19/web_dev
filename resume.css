@@ -1,7 +1,7 @@
 body{
     margin:0px;
 }
-
+/* Body header */
 
 #body-header{
     background-image:url(/image/_0b69694f-d98c-46d6-aeb5-7bbf772f43a8.jpeg);
@@ -12,11 +12,14 @@ body{
     background-attachment: fixed;
 }
 
+/* horizontal list */
+
 
 .horizontal-list{
     list-style: none;
     padding-left: 0px;
     text-align: center;
+    font-size: 1.5rem;
 }
 
 .text-center{
@@ -31,4 +34,11 @@ body{
 .horizontal-list li a{
     color: white;
     text-decoration: none;
+    transition: color 0.5s , border-bottom 4s;
+}
+
+.horizontal-list li a:hover{
+    color: lightgrey;
+    border-bottom:1px solid white ;
+    text-shadow: rgba(230,196,196,0.3);
 }
