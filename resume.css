@@ -7,7 +7,7 @@ body {
 /* Body Header */
 
 #body-header {
-    height: 65vh;
+    height: 90vh;
     opacity: 0.8;
     background-image: url(/image/_0b69694f-d98c-46d6-aeb5-7bbf772f43a8.jpeg);
     background-size: cover;
@@ -28,7 +28,7 @@ body {
     display: inline-block;
     margin: 0px 8px 8px 0px;
     font-weight: 100;
-    font-size: 0.9rem;
+    font-size: 1.5rem;
 }
 
 
@@ -53,7 +53,7 @@ body {
 /* Name and Social Icons*/
 
 #name-social-container {
-    margin-top: 20vh;
+    margin-top: 40vh;
 }
 
 #my-name {
@@ -72,11 +72,44 @@ body {
     box-shadow: 0px 0px 6px 4px rgba(230, 196, 196, 0.3);
 }
 
-.social-icons li a i:hover {
-    box-shadow: 0px 0px 6px 4px rgba(230, 196, 196, 0.3);
+
+
+.social-icons li a i{
+    width: 1rem;
+    padding: 4px;
+    font-size:1.5rem;
 }
 
-.social-icons li a img {
-    width: 1rem;
-    padding: 8px;
+
+#about p span {
+    color: #2857a4;
+  }
+
+#about{
+    height: auto;
+    width: 100%;
+	position: relative;
+}
+
+#about p {
+    color: grey;
+}
+
+#my-image {
+	height: 12rem;
+    width: 12rem;
+    margin: auto;
+    margin-top: -6rem;
+}
+
+#my-image img {
+	height: 100%;
+    width: 100%;
+    border: 1px solid white;
+    border-radius: 50%;
+    box-shadow: 0px 0px 6px 4px lightgrey;
+}
+
+#about p span {
+	color: #2857a4;
 }
