@@ -7,7 +7,7 @@ body {
 /* Body Header */
 
 #body-header {
-    height: 90vh;
+    height: 65vh;
     opacity: 0.8;
     background-image: url(/image/_0b69694f-d98c-46d6-aeb5-7bbf772f43a8.jpeg);
     background-size: cover;
@@ -28,7 +28,7 @@ body {
     display: inline-block;
     margin: 0px 8px 8px 0px;
     font-weight: 100;
-    font-size: 1.5rem;
+    font-size: 0.9rem;
 }
 
 
@@ -53,7 +53,7 @@ body {
 /* Name and Social Icons*/
 
 #name-social-container {
-    margin-top: 40vh;
+    margin-top: 20vh;
 }
 
 #my-name {
@@ -64,43 +64,40 @@ body {
     margin-bottom: 0.5rem;
 }
 
-.social-icons li {
+
+.social-icons li a i {
+    /*color: red;*/
+    padding: 10px;
+    font-size: 1rem;
     border-radius: 50%;
 }
+
 
 .social-icons li a i:hover {
     box-shadow: 0px 0px 6px 4px rgba(230, 196, 196, 0.3);
 }
 
-
-
-.social-icons li a i{
-    width: 1rem;
-    padding: 4px;
-    font-size:1.5rem;
-}
-
+/* section part */
 section{
     width:100%;
-    /* height:75vh; */
     display:flex;
-    flex-direction: column;
-    align-items: center;
+    flex-direction:column;
+    align-items:center;
 }
-
 section:nth-child(2n+1){
-    background-color: white;
+    background-color:white;
 }
 section:nth-child(2n){
-    background-color:  #9e9b9b29;
+    background-color:#9e9b9b29;
 }
 
 .section-heading{
+    color:#2857a4;
     width:auto;
-    padding: 20px 10px 10px;
-    font-weight: 400;
-    color: #2857a4;
+    padding:20px 10px 10px;
+    font-weight:400;
 }
+
 .section-heading span{
     font-size: 40px;
     display: inline-block;
@@ -108,73 +105,116 @@ section:nth-child(2n){
     margin-right: 0.5rem;
 }
 
-/* #about section */
-#about p span {
-    color: #2857a4;
-  }
 
-#about{
+/*About Section*/
+
+#about {
     height: auto;
     width: 100%;
-	position: relative;
-}
-
-#about p {
-    color: grey;
+    position: relative;
 }
 
 #my-image {
-	height: 12rem;
+    height: 12rem;
     width: 12rem;
     margin: auto;
-    margin-top: -6rem;
+    margin-top: -17vh;
 }
 
 #my-image img {
-	height: 100%;
+    height: 100%;
     width: 100%;
-    border: 1px solid white;
     border-radius: 50%;
-    box-shadow: 0px 0px 6px 4px lightgrey;
+    border: 3px solid white;
+    box-shadow: 1px 1px 10px 2px lightgrey;
 }
 
-#about p span {
-	color: #2857a4;
+
+#about-para {
+    padding: 10px;
+    width: 70%;
+    text-align: justify;
+    color: grey;
+    line-height: 28px;
+    font-size: 1.1rem;
+    margin: auto;
 }
+
+.text-highlight {
+    color: #2857a4;
+    font-weight: 600;
+}
+
 
 /* skills-display */
 .skill-display{
-    width: 70%;
+    width: 75%;
+    padding:10px;
     display:flex;
     flex-wrap: wrap;
-    justify-content: space-between;
-
+    justify-content: space-evenly;
 }
 .skill-progress{
-    width:7rem;
-    height: 1.5rem;
+    width:11rem;
+    height: 2.2rem;
     background-color: lightgrey;
-    border-radius:  0.8rem;
+    border-radius:  1.16rem;
     border: 2px solid black;
+}
+
+.skill-progress>div{
+    border-radius:20px 0px 0px 20px;
+    border-shadow:1px 1px 5px 2px lightgrey;
 }
 .skill-name span{
     font-size:1rem;
     color: white;
+    margin-left:10px;
+    vertical-align:middle;
 }
 
 .mb75px{
-    margin-bottom: 60px;
+    margin-bottom: 75px;
 }
 .text-highlight{
     color: #2857a4;
-    font-weight:600;
+    font-weight: 600;
 }
 .mb-blue{
-    background-color:#2857a4;
+    background-color: #2857a4;
 }
 
 /* percentage-class */
 .eighty-five-percent{
-    width:80%;
     height: inherit;
+    width:85%;
+}
+.skill-progress .ninty-five-percent{
+    border-radius:20px 5px 5px 20px;
+    border-shadow:1px 1px 5px 2px lightgrey;
+}
+
+.ninty-five-percent{
+    height:inherit;
+    width:95%;
+    border-radius:15%;
+}
+
+.seventy-percent{
+    height:inherit;
+    width:70%;
+}
+.fifty-percent{
+    height:inherit;
+    width:50%;
+}
+
+.mb-orange{
+    background-color:#e04e1d;
+}
+.mb-pink{
+    background-color:#b369d7;
+}
+.mb-green{
+    background-color:#269148;
 }
