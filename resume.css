@@ -288,3 +288,24 @@ section:nth-child(2n + 1) {
     height: inherit;
     width: 50%;
 }
+
+/* contact section */
+.contact-container{
+    display: flex;
+    width:100%;
+}
+.contact-container>div{
+    width: 45%;
+}
+.contact-form{
+    display:block;
+    align-content:center;
+    padding: 10px 20%;
+}
+div input{
+    border: 0;
+    border-bottom: 4px;
+}
+.contact-touch{
+    display:block;
+}
