@@ -290,6 +290,9 @@ section:nth-child(2n + 1) {
 }
 
 /* contact section */
+#contact{
+    background-image: linear-gradient(to right top , #2857a4 ,#403066);
+}
 .contact-container{
     display: flex;
     width:100%;
@@ -301,11 +304,22 @@ section:nth-child(2n + 1) {
     display:block;
     align-content:center;
     padding: 10px 20%;
+    font-size: larger;
+}
+.contact-form input{
+    width: 80%;
+    font-size: 20px;
+    margin:20px 5px;
+    word-spacing: 20%;
+    line-height: 10%;
 }
 div input{
     border: 0;
     border-bottom: 4px;
 }
-.contact-touch{
-    display:block;
+.contact-touch span{
+    font-size: 1.25rem;
+}
+span h5{
+    font-size: larger;
 }
