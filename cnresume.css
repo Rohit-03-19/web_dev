@@ -199,6 +199,7 @@ section:nth-child(2n + 1) {
     position: relative;
     left: 5%;
     text-align: right;
+    margin: 4px;
     border: 2px solid black;
 }
 
