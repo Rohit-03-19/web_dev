@@ -520,3 +520,17 @@ button:focus {
     height: inherit;
     width: 50%;
 }
+
+.seventy-percent {
+    height: inherit;
+    width: 70%;
+}
+
+.sixty-percent {
+    height: inherit;
+    width: 60%;
+}
+.ninty-percent {
+    height:inherit;
+    width:90%;
+}
