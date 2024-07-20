@@ -11,7 +11,7 @@ body {
 #body-header {
     height: 65vh;
     opacity: 0.8;
-    background-image: url(/image/_0b69694f-d98c-46d6-aeb5-7bbf772f43a8.jpeg);
+    background-image: url(https://ninjasfiles.s3.amazonaws.com/asset_0000000000000020_1549743985_macbook_mouse.jpg);
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -53,6 +53,16 @@ body {
     text-align: center;
 }
 
+/* bar-icon */
+.bar-icon{
+    position:fixed;
+    align-items: center;
+    left:90%;
+    right:-50%;
+    height: 10%;
+    width: auto;
+    background-color:blue !important;
+}
 
 
 /* Name and Social Icons*/
@@ -519,18 +529,4 @@ button:focus {
 .fifty-percent {
     height: inherit;
     width: 50%;
-}
-
-.seventy-percent {
-    height: inherit;
-    width: 70%;
-}
-
-.sixty-percent {
-    height: inherit;
-    width: 60%;
-}
-.ninty-percent {
-    height:inherit;
-    width:90%;
 }
