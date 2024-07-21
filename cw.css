@@ -1,0 +1,18 @@
+div{
+    height:100px;
+    width: 100px;
+    background-color:aquamarine;
+    top:50%;
+    left:50%;
+    position: relative;
+    animation:transform 2s ease-in-out 2;
+}
+@keyframes updown{
+    from{
+        transform: translateY(0px);
+    }
+    to{
+        transform: translateY(-50px);
+    }
+}
+
