@@ -2,7 +2,8 @@
 
 // Stimulate a traffic light using switch
 
-let color = "red";
+let color;
+color = prompt("Enter the color ");
 
 switch (color) {
   case "red":
