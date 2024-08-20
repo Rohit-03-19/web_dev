@@ -10,20 +10,15 @@ for (let i = 0; ; i++) {
   i < 5;
 }
 
-for (let i = 0; i < 5; ) {
-  console.log(i);
-}
+// // for (let j = 0; j < 5; j++) {
+// //     console.log(j);
+// // }
 
-let j = 0;
-for (; j < 5; j++) {
-  console.log(j);
-}
+// for (let i = 0; i < 5; i++) {
+//   console.log(i);
+// }
 
-for (let i = 0; i < 5; i++) {
-  console.log(i);
-}
-
-for (let i = 0; ; i++) {
-  console.log(i);
-  i < 5;
-}
+// for (let i = 0; ; i++) {
+//   console.log(i);
+//   i < 5;
+// }
