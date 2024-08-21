@@ -1,5 +1,11 @@
 div {
   height: 200px;
   width: 200px;
-  background-color: rgba(255, 0, 0, 1);
+  background-color: rgba(255, 0, 0, 0.8);
+  color: #ffff00ff;
+}
+
+#opacity {
+  background-origin: #ffa511;
+  opacity: 0.8;
 }
