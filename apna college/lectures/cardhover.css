@@ -1,0 +1,31 @@
+.card {
+  width: 200px;
+  height: 230px;
+  border: 2px solid black;
+  display: inline-block;
+  margin: 10px;
+  border-radius: 5px;
+  box-shadow: 3px 4px 12px black;
+}
+.desc {
+  padding: 0 2px 0 2px;
+}
+
+img {
+  width: 100%;
+  border-radius: 5px 5px 0 0;
+}
+
+.woman:hover {
+  box-shadow: 3px 4px 30px greenyellow;
+  transition: 4s ease-in-out;
+  transform: scale(1.5);
+  order: 2;
+}
+
+.man:hover {
+  box-shadow: 3px 4px 30px greenyellow;
+  transition: 4s ease-in-out;
+  transform: scale(1.5);
+  order: 0;
+}
