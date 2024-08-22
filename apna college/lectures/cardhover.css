@@ -20,12 +20,18 @@ img {
   box-shadow: 3px 4px 30px greenyellow;
   transition: 4s ease-in-out;
   transform: scale(1.5);
-  order: 2;
 }
 
 .man:hover {
   box-shadow: 3px 4px 30px greenyellow;
   transition: 4s ease-in-out;
   transform: scale(1.5);
-  order: 0;
+}
+
+.desc1 {
+  order: 1;
+}
+
+.desc2 {
+  order: 3;
 }
