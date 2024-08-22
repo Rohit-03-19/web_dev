@@ -2,7 +2,7 @@ section {
   margin-top: 100px;
 }
 
-dic {
+div {
   width: 200px;
   height: 50px;
   text-align: center;
@@ -11,10 +11,30 @@ dic {
   margin: 10px;
 }
 
+div:hover {
+  transition: 5s;
+}
+
 div:nth-of-type(2n) {
   background-color: #f7db6a;
 }
 
 div:nth-of-type(3n) {
   background-color: #ebb02d;
+}
+
+#transform1:hover {
+  transform: rotate(-45deg);
+}
+
+#transform2:hover {
+  transform: scale(1, 0.5);
+}
+
+#transform3:hover {
+  transform: translate(20px, 30px);
+}
+
+#transform4:hover {
+  transform: rotateZ(360deg) translate(100px);
 }
