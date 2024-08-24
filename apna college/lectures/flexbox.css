@@ -6,7 +6,15 @@
   border: 2px solid black;
   display: flex;
   flex-direction: row;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  align-items: flex-end;
 }
+
+/* flex-direction has values row, row-reverse, column, column-reverse */
+/* jusitfy content can also contain some more value as flex-start, flex-end, center, space-between, space-around, space-evenly . it helps in aligning items in x axis. */
+/* flex-wrap has values nowrap, wrap, wrap  -reverse. */
+/* align-item has values flex-start, flex-end, center, baseline. it helps in aligning items on y axis. */
 
 h1 {
   text-align: center;
@@ -14,7 +22,7 @@ h1 {
 
 #container div {
   height: 100px;
-  width: 100px;
+  width: 200px;
   color: white;
   text-align: center;
   font-size: 1.5em;
