@@ -9,15 +9,20 @@
   justify-content: flex-start;
   flex-wrap: wrap;
   align-items: flex-end;
+  /* align-self: baseline; */
 }
 
 /* flex-direction has values row, row-reverse, column, column-reverse */
 /* jusitfy content can also contain some more value as flex-start, flex-end, center, space-between, space-around, space-evenly . it helps in aligning items in x axis. */
 /* flex-wrap has values nowrap, wrap, wrap  -reverse. */
 /* align-item has values flex-start, flex-end, center, baseline. it helps in aligning items on y axis. */
+/* align-self is used to align a single individual element or item . align-self has sae values as of align items*/
+/* align-self>align-items */
+
+/* Flex-basis helps us to set initial main size of a flex item. */
 
 h1 {
-  text-align: center;
+  text-align: ce nter;
 }
 
 #container div {
