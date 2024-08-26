@@ -13,8 +13,12 @@
 @keyframes fontanimation {
   from {
     font-size: 10px;
+    width: 50px;
+    background-color: pink;
   }
   to {
-    font-size: 40px;
+    font-size: 100px;
+    width: 800px;
+    background-color: green;
   }
 }
