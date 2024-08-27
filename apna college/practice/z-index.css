@@ -7,8 +7,12 @@
 
 .one {
   background-color: aquamarine;
+  z-index: 2;
+  position: relative;
 }
 
 .two {
   background-color: darksalmon;
+  position: relative;
+  bottom: 50px;
 }
