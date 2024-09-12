@@ -20,3 +20,24 @@
 // Count the number of digits in both the numbers
 // Check if both the numbers have equal numbers of digits
 // If they are equal return true else return false
+
+function commonDigits(num1, num2) {
+  let n = 0;
+  let m = 0;
+  let answer;
+  while (num1 != 0) {
+    num1 /= 10;
+    n += 1;
+  }
+  while (num2 != 0) {
+    num2 /= 10;
+    m += 1;
+  }
+  if (n == m) {
+    console.log("true");
+  } else {
+    console.log("false");
+  }
+}
+
+commonDigits(74847, 78155);
