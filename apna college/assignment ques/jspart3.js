@@ -35,9 +35,9 @@ if (str[idx] == str[idx].toLowerCase()) {
 
 /**Q6. Write a javascript program to check if an element exists in an array or not. */
 
-let arr = ["hello", "a", 23, 64, 99, -6];
+let arr1 = ["hello", "a", 23, 64, 99, -6];
 let item = 64;
-if (arr.indexOf(item) != -1) {
+if (arr1.indexOf(item) != -1) {
   console.log("elementexistsinarray");
 } else {
   console.log("elementdoesn'texistinarray");
