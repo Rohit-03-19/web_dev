@@ -19,13 +19,12 @@ for (let i = 0; i < arr.length; i++) {
   }
 }
 console.log(arr);
+console.log(count.length);
+console.log(typeof count);
 // console.log(`the element ${num} was present at ${count}`);
-if (m == arr.lenght - 1) {
-  count = count.slice(0, count.length - 4); // Remove the last "&" character
-  console.log(`The element ${num} was present at ${count}`);
-} else {
-  console.log(`The element ${num} was not found in the array`);
-}
+count = count.trim;
+count = count.slice(0, 17); // Remove the last "&" character
+console.log(`The element ${num} was present at ${count}`);
 
 // let arr = [1, 3, 4, 2, 5, 3, 6, 7, 1, 2, 8, 4, 5, 9, 64, 15];
 
