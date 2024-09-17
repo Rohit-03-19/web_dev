@@ -29,3 +29,38 @@ function getUnique(string) {
 }
 
 console.log(getUnique(str));
+
+/**Q3. Write a Javascript function that accepts a list of country naes as input and returns the longest country name as output.*/
+
+let country = ["australia", "Germany", "United States of America"];
+
+function longestName(country) {
+  let ansIdx = 0;
+  for (let i = 0; i < country.lenght; i++) {
+    let ansLen = country[ansIdx].length;
+    let ourrLen = country[i].length;
+    if (currLen > ansLen) {
+      ansIdx = i;
+    }
+  }
+  return country[ansIdx];
+}
+
+/**Q4. Write a Javascript function to count the number of vowels in a string argument. */
+
+let str = "apnacollege";
+function countVowels(str) {
+  letcount = 0;
+  for (leti = 0; i < str.length; i++) {
+    if (
+      str.charAt(i) == "a" ||
+      str.charAt(i) == "e" ||
+      str.charAt(i) == "i" ||
+      str.charAt(i) == "o" ||
+      str.charAt(i) == "u"
+    ) {
+      count++;
+    }
+  }
+  return count;
+}
