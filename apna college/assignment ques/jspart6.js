@@ -15,20 +15,20 @@
 
 /**2. Write a Javascript function to extract unique characters from a string. Example : str = “abcdabcdefgggh” ans=“abcdefgh” */
 
-let str = "abcdabcdefgggh";
+// let str = "abcdabcdefgggh";
 
-function getUnique(string) {
-  let ans = "";
-  for (let i = 0; i < str.length; i++) {
-    let currChar = string[i];
-    if (ans.indexOf(currChar) == -1) {
-      ans += currChar;
-    }
-  }
-  return ans;
-}
+// function getUnique(string) {
+//   let ans = "";
+//   for (let i = 0; i < str.length; i++) {
+//     let currChar = string[i];
+//     if (ans.indexOf(currChar) == -1) {
+//       ans += currChar;
+//     }
+//   }
+//   return ans;
+// }
 
-console.log(getUnique(str));
+// console.log(getUnique(str));
 
 /**Q3. Write a Javascript function that accepts a list of country naes as input and returns the longest country name as output.*/
 
