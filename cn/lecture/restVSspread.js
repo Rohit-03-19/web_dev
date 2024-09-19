@@ -21,3 +21,12 @@ function addStudent(batch, ...students) {
 }
 
 addStudent(aprilBatch, "Sunny", "Ritu", "Jaron", "Mohit");
+
+// Spread ...
+
+const newBatch = mayBatch;
+console.log(newBatch);
+
+mayBatch.push("newStudent");
+console.log(mayBatch);
+console.log(newBatch);
