@@ -23,10 +23,17 @@ function addStudent(batch, ...students) {
 addStudent(aprilBatch, "Sunny", "Ritu", "Jaron", "Mohit");
 
 // Spread ...
+// it expands or copy the array.
 
-const newBatch = mayBatch;
+const newBatch = [...mayBatch];
 console.log(newBatch);
 
 mayBatch.push("newStudent");
 console.log(mayBatch);
 console.log(newBatch);
+
+// Concatenate
+
+const mergeBatch = [...mayBatch, ...juneBatch];
+
+console.log(mergeBatch);
