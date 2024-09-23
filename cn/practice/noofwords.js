@@ -14,14 +14,8 @@
 function countWords(str) {
   let count = 0;
   for (let i = 0; i < str.length; i++) {
-    for (let j = 1; j < str.length; j++) {
-      if (str.charAt(i) === str.charAt(j)) {
-        continue;
-      } else if (str.charAt(i) === " " || str.charAt(j) == " ") {
-        continue;
-      } else {
-        count += 1;
-      }
+    if (str.charAt(i) == " ") {
+      count += 1;
     }
   }
   return count;
