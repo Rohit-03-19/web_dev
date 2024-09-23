@@ -30,3 +30,4 @@ function findTheNumber(arr, ele) {
 
 let ele = 62;
 console.log(findTheNumber(array, ele));
+console.log(array.reverse());
