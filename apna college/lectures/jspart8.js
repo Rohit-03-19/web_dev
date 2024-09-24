@@ -44,5 +44,31 @@ let ans = nums.filter((el) => {
  * lets see it with an example.
  */
 
-[1, 2, 3, 4, 5].reduce((ret, ele) => res + ele);
+let finalvalue = [1, 2, 3, 4, 5].reduce((res, ele) => res + ele);
 //here the output will be 15.
+
+/**Finding maximum in an array using the Reduce function in the array.
+ * see the below given example
+ */
+
+//this is done with normal method
+let arr = [1, 4, 2, 5, 6, 7, 2, 9, 2];
+// let max = -1;
+// for (let i in arr) {
+//   if (max < arr[i]) {
+//     max = arr[i];
+//   }
+// }
+// console.log(max);
+
+//now doing with reduce function.
+
+let max = arr.reduce((max, ele) => {
+  if (max < ele) {
+    return ele;
+  } else {
+    return max;
+  }
+});
+
+console.log(max);
