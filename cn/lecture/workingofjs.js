@@ -24,27 +24,57 @@
 // var birthYear = greetUser(username);
 // console.log(birthYear);
 
-var userName = "Tom";
-var userAge = 10;
-console.log(`username: ${userName}`);
-console.log(`userAge: ${userAge}`);
+// var userName = "Tom";
+// var userAge = 10;
+// console.log(`username: ${userName}`);
+// console.log(`userAge: ${userAge}`);
 
-greetUser(userName);
+// greetUser(userName);
 
-function greetUser(name) {
-  console.log(`*****************************`);
-  var greet = "I hope you are doing fine.";
-  console.log(`hello ${name}, ${greet}`);
-  var currentYear = 2030;
-  const year = birthYear(currentYear, userAge);
-  console.log(`*****************************`);
-  return `Your birth year is ${year}`;
+// function greetUser(name) {
+//   console.log(`*****************************`);
+//   var greet = "I hope you are doing fine.";
+//   console.log(`hello ${name}, ${greet}`);
+//   var currentYear = 2030;
+//   const year = birthYear(currentYear, userAge);
+//   console.log(`*****************************`);
+//   return `Your birth year is ${year}`;
+// }
+
+// function birthYear(year, age) {
+//   console.log("Calculating the birth year");
+//   return year - age;
+// }
+
+// var birthYear = greetUser(userName);
+// console.log(birthYear);
+
+/**Scope in JavaScript
+ *
+ * Global
+ * Function(local)
+ * Block
+ */
+
+var a = 10;
+let b = 20;
+const c = 30;
+
+function print() {
+  var a = "ten";
+  let b = "twenty";
+
+  console.log("***** Inside print Function*****");
+  console.log(a, b, c);
+  console.log("***** *****");
+
+  function innerPrint() {
+    var a = "inner10";
+    console.log("*Inside innerPrint Function*");
+    console.log(a, b, c);
+  }
+  innerPrint();
 }
 
-function birthYear(year, age) {
-  console.log("Calculating the birth year");
-  return year - age;
-}
-
-var bYear = greetUser(userName);
-console.log(bYear);
+print();
+console.log(a, b, c);
