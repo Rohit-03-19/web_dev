@@ -72,3 +72,12 @@ let max = arr.reduce((max, ele) => {
 });
 
 console.log(max);
+
+/** Destructuring . It means storing values of arrays into multiple variables.
+ */
+
+let names = ["tony", "bruce", "peter", "steve"];
+let [winner, runnerup, secondrunnerup] = names;
+console.log(winner); //tony
+console.log(runnerup); //bruce
+console.log(secondrunnerup); //peter
