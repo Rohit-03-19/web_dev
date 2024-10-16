@@ -30,7 +30,17 @@
 // let img = document.querySelector("img");
 // img.style;
 
-let links = document.querySelectorAll(".box a");
-for (let i = 0; i < links.length; i++) {
-  links[i].style.color = "red";
-}
+// let links = document.querySelectorAll(".box a");
+// for (let i = 0; i < links.length; i++) {
+//   links[i].style.color = "red";
+// }
+
+/** Manipulating the Attributes
+ * obj.getAttribute( attr )
+ * obj.setAtrribute( attr )
+ */
+
+let img = document.querySelector("img");
+comsole.log(img);
+img.getAttribute("id");
+img.setAttribute("id", "spidermanImg");
