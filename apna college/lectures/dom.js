@@ -41,6 +41,7 @@
  */
 
 let img = document.querySelector("img");
-comsole.log(img);
+console.dir(img);
 img.getAttribute("id");
 img.setAttribute("id", "spidermanImg");
+//if there is no existing attribute then we can create a new attribute of the element.
