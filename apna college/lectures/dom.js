@@ -45,3 +45,9 @@ console.dir(img);
 img.getAttribute("id");
 img.setAttribute("id", "spidermanImg");
 //if there is no existing attribute then we can create a new attribute of the element.
+
+let links = document.querySelectorAll(".box a");
+
+for (let i = 0; i < links.length; i++) {
+  links[i].computedStyleMap.color = "purple";
+}
