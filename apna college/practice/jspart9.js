@@ -13,7 +13,10 @@ h3.classList.add("blue");
 let div = document.createElement("div");
 let h1 = document.createElement("h1");
 let para2 = document.createElement("para2");
-
+h1.innerText = "I'm in a div";
+para2.innerText = "ME TOO";
 document.querySelector("body").append(div);
+div.append(h1);
+div.append(para2);
 
 div.classList.add("border");
