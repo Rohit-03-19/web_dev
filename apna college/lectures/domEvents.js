@@ -52,9 +52,20 @@ let form = document.querySelector("form");
 
 form.addEventListener("submit", function (event) {
   event.preventDefault();
-  let user = document.querySelector("#user");
-  let pass = document.querySelector("#pass");
+  // console.dir(form);
 
-  console.log(user.value);
-  console.log(pass.value);
+  // let user = document.querySelector("#user");
+  // let pass = document.querySelector("#pass");
+
+  // console.log(user.value);
+  // console.log(pass.value);
+
+  // alert(`Hi ${user.value} , your password is set to ${pass.value}`);
+});
+
+let user = document.querySelector("#user");
+
+user.addEventListener("change", function () {
+  console.log("input changed");
+  console.log("Final value = ", this.value);
 });
