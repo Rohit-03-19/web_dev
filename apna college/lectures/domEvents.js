@@ -48,24 +48,42 @@
 // //   console.log("key was pressed");
 // // });
 
-let form = document.querySelector("form");
+// let form = document.querySelector("form");
 
-form.addEventListener("submit", function (event) {
-  event.preventDefault();
-  // console.dir(form);
+// form.addEventListener("submit", function (event) {
+//   event.preventDefault();
+//   // console.dir(form);
 
-  // let user = document.querySelector("#user");
-  // let pass = document.querySelector("#pass");
+//   // let user = document.querySelector("#user");
+//   // let pass = document.querySelector("#pass");
 
-  // console.log(user.value);
-  // console.log(pass.value);
+//   // console.log(user.value);
+//   // console.log(pass.value);
 
-  // alert(`Hi ${user.value} , your password is set to ${pass.value}`);
+//   // alert(`Hi ${user.value} , your password is set to ${pass.value}`);
+// });
+
+// let user = document.querySelector("#user");
+
+// user.addEventListener("change", function () {
+//   console.log("input changed");
+//   console.log("Final value = ", this.value);
+// });
+
+let div = document.querySelector("div");
+let li = document.querySelector("li");
+let ul = document.querySelector("ul");
+
+div.addEventListener("click", function () {
+  console.log("div was clicked");
 });
 
-let user = document.querySelector("#user");
+ul.addEventListener("click", function () {
+  event.stopPropagation();
+  console.log("ul was clicked");
+});
 
-user.addEventListener("change", function () {
-  console.log("input changed");
-  console.log("Final value = ", this.value);
+li.addEventListener("click", function () {
+  event.stopPropagation();
+  console.log("li was clicked");
 });

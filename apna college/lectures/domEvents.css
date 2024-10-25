@@ -1,10 +1,14 @@
 div {
-  height: 100px;
-  width: 500px;
+  height: 200px;
+  width: 400px;
   border: 2px solid black;
-  margin: 20px auto;
+  background-color: pink;
 }
 
-body {
-  text-align: center;
+ul {
+  background-color: blue;
+}
+
+li {
+  background-color: greenyellow;
 }
