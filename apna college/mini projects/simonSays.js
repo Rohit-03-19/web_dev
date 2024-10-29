@@ -55,7 +55,7 @@ function checkColor(index) {
     }
     console.log("same value");
   } else {
-    h3.innerText = `Game Over!!! Your score is ${level}.`;
+    h3.innerText = `Game Over!!! Your score is ${level}. Press any key to start`;
     body.style.backgroundColor = "red";
     setTimeout(function () {
       body.style.backgroundColor = "white";
