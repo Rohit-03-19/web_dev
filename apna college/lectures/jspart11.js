@@ -3,19 +3,19 @@
  * for example stacking up few cd's or stacking up plates.
  */
 
-function hello() {
-  console.log("inside hello function.");
-  console.log("hello");
-}
+// function hello() {
+//   console.log("inside hello function.");
+//   console.log("hello");
+// }
 
-function demo() {
-  console.log("Inside demo function noew calling hello function.");
-  hello();
-}
+// function demo() {
+//   console.log("Inside demo function noew calling hello function.");
+//   hello();
+// }
 
-console.log("calling the demo function. ");
-demo();
-console.log("Stack ended. Bye!!!.");
+// console.log("calling the demo function. ");
+// demo();
+// console.log("Stack ended. Bye!!!.");
 
 function one() {
   return 1;
