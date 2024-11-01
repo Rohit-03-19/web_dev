@@ -100,14 +100,27 @@ h1 = document.querySelector("h1");
  */
 
 function savetoDb(data) {
-  return new Promise((success, failure) => {
+  return new Promise((resolve, reject) => {
     let internetSpeed = Math.floor(Math.random() * 10) + 1;
     if (internetSpeed > 4) {
-      success("Congratulations!!!, your data was saved.");
+      resolve("Congratulations!!!, your data was saved.");
     } else {
-      failure("Weak connection!!!, Your data was not saved.");
+      reject("Weak connection!!!, Your data was not saved.");
     }
   });
 }
 
-console.log(savetoDb("Apna College"));
+// console.log(savetoDb("Apna College"));
+
+let request = savetoDb("Apna College");
+request
+  .then(() => {
+    console.log("promise1 was resolved");
+    return savetoDb("Hello World");
+  })
+  .then(() => {
+    console.log("promise2 was resolved.");
+  })
+  .catch(() => {
+    console.log("promise was rejected");
+  });
