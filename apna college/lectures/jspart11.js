@@ -17,17 +17,50 @@
 // demo();
 // console.log("Stack ended. Bye!!!.");
 
-function one() {
-  return 1;
+// function one() {
+//   return 1;
+// }
+
+// function two() {
+//   return one() + one();
+// }
+
+// function three() {
+//   let ans = two() + one();
+//   console.log(ans);
+// }
+
+// three();
+
+h1 = document.querySelector("h1");
+
+// setTimeout(() => {
+//   h1.style.color = "red";
+// }, 1000);
+
+// setTimeout(() => {
+//   h1.style.color = "orange";
+// }, 2000);
+// setTimeout(() => {
+//   h1.style.color = "green";
+// }, 3000);
+
+//instead of writing this much amount of code we can create a function  for making it more practical but yet it looks not that good but used in industrial level projects and this is called CALLBACK HELL.
+function changeColor(color, delay, nextColorChange) {
+  setTimeout(() => {
+    h1.style.color = color;
+    if (nextColorChange) {
+      nextColorChange();
+    }
+  }, delay);
 }
 
-function two() {
-  return one() + one();
-}
-
-function three() {
-  let ans = two() + one();
-  console.log(ans);
-}
-
-three();
+changeColor("red", 1000, () => {
+  changeColor("orange", 1000, () => {
+    changeColor("green", 1000, () => {
+      changeColor("pink", 1000, () => {
+        changeColor("blue", 1000);
+      });
+    });
+  });
+});
