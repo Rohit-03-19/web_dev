@@ -64,3 +64,14 @@ changeColor("red", 1000, () => {
     });
   });
 });
+
+/** Promises :- the promises object represents the eventual completion (or failure) of an asychronous operation and its resulting value.*/
+
+function savetoDb(data) {
+  let internetSpeed = Math.floor(Math.random() * 10) + 1;
+  if (internetSpeed > 4) {
+    console.log("Your data was saved");
+  } else {
+    console.log("weak connection .  data not saved.");
+  }
+}
