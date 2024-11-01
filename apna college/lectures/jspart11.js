@@ -79,9 +79,27 @@ function savetoDb(data, success, failure) {
 savetoDb(
   "Aapna College",
   () => {
-    console.log("Your work has been saved successfully!!!.");
+    console.log("(1)Your work has been saved successfully!!!.");
+    savetoDb(
+      "Hello World",
+      () => {
+        console.log("(2)Your work has been saved successfully!!!.");
+        savetoDb(
+          "Rohit you have done your work successfully, Congratulaion!!!.",
+          () => {
+            console.log("(3)Your work has been saved successfully!!!.");
+          },
+          () => {
+            console.log("(3)Weak connection, data was no saved.");
+          }
+        );
+      },
+      () => {
+        console.log("(2)Weak connection, data was no saved.");
+      }
+    );
   },
   () => {
-    console.log("Weak connection, data was no saved.");
+    console.log("(1)Weak connection, data was no saved.");
   }
 );
