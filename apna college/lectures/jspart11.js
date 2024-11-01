@@ -46,60 +46,68 @@ h1 = document.querySelector("h1");
 // }, 3000);
 
 //instead of writing this much amount of code we can create a function  for making it more practical but yet it looks not that good but used in industrial level projects and this is called CALLBACK HELL.
-function changeColor(color, delay, nextColorChange) {
-  setTimeout(() => {
-    h1.style.color = color;
-    if (nextColorChange) {
-      nextColorChange();
-    }
-  }, delay);
-}
+// function changeColor(color, delay, nextColorChange) {
+//   setTimeout(() => {
+//     h1.style.color = color;
+//     if (nextColorChange) {
+//       nextColorChange();
+//     }
+//   }, delay);
+// }
 
-changeColor("red", 1000, () => {
-  changeColor("orange", 1000, () => {
-    changeColor("green", 1000, () => {
-      changeColor("pink", 1000, () => {
-        changeColor("blue", 1000);
-      });
-    });
-  });
-});
+// changeColor("red", 1000, () => {
+//   changeColor("orange", 1000, () => {
+//     changeColor("green", 1000, () => {
+//       changeColor("pink", 1000, () => {
+//         changeColor("blue", 1000);
+//       });
+//     });
+//   });
+// });
 
 /** Promises :- the promises object represents the eventual completion (or failure) of an asychronous operation and its resulting value.*/
 
-function savetoDb(data, success, failure) {
-  let internetSpeed = Math.floor(Math.random() * 10) + 1;
-  if (internetSpeed > 4) {
-    success();
-  } else {
-    failure();
-  }
+// savetoDb(
+//   "Aapna College",
+//   () => {
+//     console.log("(1)Your work has been saved successfully!!!.");
+//     savetoDb(
+//       "Hello World",
+//       () => {
+//         console.log("(2)Your work has been saved successfully!!!.");
+//         savetoDb(
+//           "Rohit you have done your work successfully, Congratulaion!!!.",
+//           () => {
+//             console.log("(3)Your work has been saved successfully!!!.");
+//           },
+//           () => {
+//             console.log("(3)Weak connection, data was no saved.");
+//           }
+//         );
+//       },
+//       () => {
+//         console.log("(2)Weak connection, data was no saved.");
+//       }
+//     );
+//   },
+//   () => {
+//     console.log("(1)Weak connection, data was no saved.");
+//   }
+// );
+
+/** Promises is basically an object which consists of two main things
+ * resolve & reject. (ie. success or failure.)
+ */
+
+function savetoDb(data) {
+  return new Promise((success, failure) => {
+    let internetSpeed = Math.floor(Math.random() * 10) + 1;
+    if (internetSpeed > 4) {
+      success("Congratulations!!!, your data was saved.");
+    } else {
+      failure("Weak connection!!!, Your data was not saved.");
+    }
+  });
 }
 
-savetoDb(
-  "Aapna College",
-  () => {
-    console.log("(1)Your work has been saved successfully!!!.");
-    savetoDb(
-      "Hello World",
-      () => {
-        console.log("(2)Your work has been saved successfully!!!.");
-        savetoDb(
-          "Rohit you have done your work successfully, Congratulaion!!!.",
-          () => {
-            console.log("(3)Your work has been saved successfully!!!.");
-          },
-          () => {
-            console.log("(3)Weak connection, data was no saved.");
-          }
-        );
-      },
-      () => {
-        console.log("(2)Weak connection, data was no saved.");
-      }
-    );
-  },
-  () => {
-    console.log("(1)Weak connection, data was no saved.");
-  }
-);
+console.log(savetoDb("Apna College"));
