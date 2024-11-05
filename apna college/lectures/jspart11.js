@@ -58,7 +58,19 @@ let requestPromise = changeColor("red", 1000);
 requestPromise
   .then((result) => {
     console.log("color changed");
+    return changeColor("orange", 1000);
+  })
+  .then((result) => {
+    console.log("color changed");
     return changeColor("green", 1000);
+  })
+  .then((result) => {
+    console.log("color changed");
+    return changeColor("blue", 1000);
+  })
+  .then((result) => {
+    console.log("color changed");
+    return changeColor("pink", 1000);
   })
   .catch((reject) => {
     console.log("Color not changed");
