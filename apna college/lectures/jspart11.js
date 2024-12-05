@@ -50,7 +50,12 @@ h1 = document.querySelector("h1");
 function changeColor(color, delay) {
   return new Promise((resolve, reject) => {
     setTimeout(() => {
+      let num = Math.floor(Math.random() * 5) + 1;
+      if (num > 2) {
+        reject("promise rejected");
+      }
       h1.style.color = color;
+      console.log(`Color changed to ${color}!!!`);
       resolve("Color Changed");
     }, delay);
   });
