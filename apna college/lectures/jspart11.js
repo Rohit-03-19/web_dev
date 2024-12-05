@@ -32,7 +32,7 @@
 
 // // three();
 
-// h1 = document.querySelector("h1");
+h1 = document.querySelector("h1");
 
 // // setTimeout(() => {
 // //   h1.style.color = "red";
@@ -46,14 +46,23 @@
 // // }, 3000);
 
 // //instead of writing this much amount of code we can create a function  for making it more practical but yet it looks not that good but used in industrial level projects and this is called CALLBACK HELL.
-// function changeColor(color, delay) {
-//   return new Promise((resolve, reject) => {
-//     setTimeout(() => {
-//       h1.style.color = color;
-//       resolve("Color Changed");
-//     }, delay);
-//   });
-// }
+
+function changeColor(color, delay) {
+  return new Promise((resolve, reject) => {
+    setTimeout(() => {
+      h1.style.color = color;
+      resolve("Color Changed");
+    }, delay);
+  });
+}
+
+async function demo() {
+  await changeColor("red", 1000);
+  await changeColor("orange", 1000);
+  await changeColor("green", 1000);
+  await changeColor("blue", 1000);
+}
+
 // let requestPromise = changeColor("red", 1000);
 // requestPromise
 //   .then((result) => {
@@ -161,10 +170,18 @@
 //     console.log("proimse was rejected.");
 //   });
 
-function getnumber() {
-  console.log("5");
-}
+// function getnumber() {
+//   return new Promise((resolve, reject) => {
+//     setTimeout(() => {
+//       let num = Math.floor(Math.random() * 10) + 1;
+//       console.log(num);
+//       resolve();
+//     }, 1000);
+//   });
+// }
 
-async function demo() {
-  getnumber();
-}
+// async function demo() {
+//   await getnumber();
+//   await getnumber();
+//   getnumber();
+// }
